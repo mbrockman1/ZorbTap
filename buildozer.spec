@@ -7,7 +7,7 @@ title = ZorbTap
 package.name = ZorbTap
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.ZorbTap.tap
+package.domain = org.mbapps.zorbtap
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -72,7 +72,7 @@ orientation = portrait
 fullscreen = 1
 
 # (list) Permissions
-#android.permissions = INTERNET
+android.permissions = INTERNET
 
 # (int) Android API to use
 android.api = 19
