@@ -56,9 +56,4 @@ class SquareTapApp(App):
 
 if __name__ == '__main__':
     app_instance = SquareTapApp()
-    if platform == 'android':
-        import android.activity
-        android.activity.bind(on_new_intent=app_instance.android_message)
-    elif platform == 'ios':
-        Window.bind(on_dropfile=app_instance.ios_message)
     app_instance.run()

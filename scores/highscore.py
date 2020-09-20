@@ -1,5 +1,5 @@
 from kivy.uix.widget import Widget
-import cPickle as pickle
+import pickle
 import collections
 from time import time
 import os

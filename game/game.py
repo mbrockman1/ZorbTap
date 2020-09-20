@@ -53,8 +53,8 @@ class SquareTapWidget(Widget):
         # Set size and random position of Rectangle
         self.rect_size = (max(Window.width, Window.height) / 10,
                           max(Window.width, Window.height) / 10)
-        self.window_pos = (randint(0, Window.width - self.rect_size[0]),
-                           randint(0, Window.height - self.rect_size[1]))
+        self.window_pos = (randint(0, int(Window.width - self.rect_size[0])),
+                           randint(0, int(Window.height - self.rect_size[1])))
         # Fixed for any screen
         self.secondary_time = max(
             float(self.time / self.rect_size[0]),
@@ -102,7 +102,7 @@ class SquareTapWidget(Widget):
             self.draw_clock()
 
         # if area = 0; LOSER
-        elif (self.rect_size[0] is 0 or self.rect_size[1] is 0 or
+        elif (self.rect_size[0] == 0 or self.rect_size[1] == 0 or
               self.rect_size[0] * self.rect_size[1] == 0 or
               (self.spaceship.size[0] < 0.)):
             self.spaceship.size = (0, 0)
