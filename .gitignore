@@ -4,3 +4,4 @@ bin/
 *.so
 *.pyc
 *.spec
+buildozer.spec
